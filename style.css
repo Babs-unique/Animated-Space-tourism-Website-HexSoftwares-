@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(./starter-code/assets/home/background-home-desktop.jpg);
+    user-select: none;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0px 20px 20px;
+}
+ul{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+    opacity: 1;
+    width: 50%;
+    gap: 30px;
+    align-items: center;
+    padding: 30px 20px 30px 5% ;
+    position: relative;
+}
+.logo{
+    width: 10%;
+    padding: 0px 20px;
+}
+.desktop-line{
+    width: 44%;
+    padding-left: 5%;
+    position: absolute;
+    left: 10%;
+    opacity: 1;
+    z-index: 999;
+}
+
+.desktop-line-through{
+    background-color:rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 2px;
+    z-index: 9999;
+    
+}
+ul li{
+    list-style-type: none;
+    opacity: 1;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+    display: flex;
+    gap: 10px;
+
+}
+span{
+    font-weight: 900;
+}
+.burger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+.line{
+    width: 26px;
+    height: 3px;
+    background-color: white;
+    transition: all 100ms ease;
+}
+.toggle .line1{
+    transform: rotate(45deg) translateX(40%);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(-45deg) translateX(40%);
+}
+
+/* HOME PAGE DESKTOP DESIGN */
+main{
+    height: 100%;
+    color: white;
+}
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50%;
+    padding: 10% 30% 0 10%;
+}
+.container div:nth-child(2){
+    width: 50%;
+    padding-top: 12%;
+}
+.container div:nth-child(2) button{
+    background-color: white;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: none;
+}
+.container div:nth-child(2) button>a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+.container div:first-child{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+h1{
+    font-size: 8rem;
+}
+h4{
+    font-weight: 550;
+}
+p{
+    line-height: 24px;
+}
+
+
+
+@media (min-width:320px) and (max-width:767px) {
+    /* STYLE FOR HOME MOBILE VIEW */
+    body,html{
+        overflow-x: hidden;
+    }
+    body{
+        background: url(./starter-code/assets/home/background-home-mobile.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 20%;
+        overflow: hidden;
+    }
+    nav{
+        position: relative;
+    }
+    ul{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+        top: 14vh;
+        align-items: start;
+        padding: 30px;
+        justify-content: start;
+        gap: 50px;
+        transform: translateX(100%);
+        transition: all 1s ease-in;
+    }
+    .show-nav{
+        transform: translateX(0%);
+    }
+    .desktop-line-through{
+        display: none;
+    }
+    .burger{
+        display:flex;
+        padding-right: 20px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        gap: 20px;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    .container div{
+        width: 100%;
+    }
+    .container div:first-child{
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    .container div:first-child p{
+        text-align: center;
+        width: 100%;
+        padding: 2%;
+    }
+    .container div:nth-child(2){
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        padding: 0;
+    } 
+
+}
+@media (min-width:768px) and (max-width:1023px) {
+     /*    STYLE FOR HOME TABLET VIEW */
+    body{
+        background: url(./starter-code/assets/home/background-home-tablet.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-size:100%;
+        background-position:center ;
+        overflow-x: hidden;
+        
+    }
+    header{
+        width: 100vw;
+    }
+    nav{
+        width: 100%;
+        padding: 0;
+    }
+    .desktop-line{
+        display: none;
+    }
+    ul{
+        padding-left: 20px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 60%;
+    }
+    ul li span{
+        display: none;
+    }
+    main{
+        
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        gap: 40px;
+    }
+    .container div{
+        width: 100%;
+    }
+    .container div:first-child{
+        align-items: center;
+        padding: 10% 0;
+        gap: 10px;
+    }
+    .container div:first-child p{
+        text-align: center;
+    }
+    .container div:nth-child(2){
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        padding: 0;
+    }
+    .container div p{
+        width: 50%;
+        text-align: center;
+    }
+}
+@media (min-width:1024px) and (max-width:1399px) {
+    .desktop-line{
+        width: 35%;
+        left: 9%;
+    }
+    ul{
+        width: 60%;
+    }
+/*     body{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        overflow: hidden;
+        
+    }
+    .container{
+        justify-content: space-evenly;
+        gap: 30%;
+        padding-top: 0;
+    } */
+}
