@@ -24,7 +24,7 @@ ul{
     box-shadow: 0 4px 30px rgba(0,0,0,0.1);
     opacity: 1;
     width: 50%;
-    gap: 30px;
+    gap: 50px;
     align-items: center;
     padding: 30px 20px 30px 5% ;
     position: relative;
@@ -152,17 +152,18 @@ p{
         position: absolute;
         flex-direction: column;
         height: 100vh;
-        width: 100vw;
-        top: 14vh;
+        width: 100%;
+        top: 0vh;
         align-items: start;
         padding: 30px;
         justify-content: start;
+        padding-top: 30%;
         gap: 50px;
         transform: translateX(100%);
         transition: all 1s ease-in;
     }
     .show-nav{
-        transform: translateX(0%);
+        transform: translateX(25%);
     }
     .desktop-line-through{
         display: none;
@@ -228,9 +229,8 @@ p{
         display: none;
     }
     ul{
-        padding-left: 20px;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        padding-left: 30px;
+        gap: 30px;
         width: 60%;
     }
     ul li span{
@@ -276,7 +276,7 @@ p{
         left: 9%;
     }
     ul{
-        width: 60%;
+        width: 61%;
     }
 /*     body{
         background-position: center;

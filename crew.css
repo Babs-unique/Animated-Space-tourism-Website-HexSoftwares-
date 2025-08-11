@@ -1,0 +1,130 @@
+body{
+    background: url(./starter-code/assets/crew/background-crew-desktop.jpg);
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.crew-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    padding-top: 1%;
+}
+h1{
+    font-size: 32px;
+}
+h3{
+    height: 30%;
+    padding-top: 2%;
+    padding-left: 8%;
+}
+span{
+    opacity: .5;
+}
+.crew-image{
+    height: 100%;
+}
+.crew-image img{
+    object-fit: contain;
+}
+.crew-text{
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.crew-name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.radios{
+    padding-top: 10%;
+    display: flex;
+    gap: 15px;
+}
+.radios input{
+    opacity: .4;
+}
+.radios input:active{
+    background-color: aqua;
+}
+@media (min-width:320px) and (max-width:767px) {
+    body{
+        background: url(./starter-code/assets/crew/background-crew-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: 100%;
+        background-size: cover;
+    }
+    .crew-container{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 10%;
+        
+    }
+    h1{
+        font-size: 24px;
+    }
+    .crew-text{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
+        padding-bottom: 10%;
+    }
+    p{
+        text-align: center;
+    }
+    .crew-image img{
+        width:250px;
+        height: 250px;
+    }
+    .crew-name{
+        order: 1;
+    }
+    .radios{
+        order: 2;
+    }
+}
+@media (min-width:768px) and (max-width:1023px) {
+    body{
+        background: url(./starter-code/assets/crew/background-crew-tablet.jpg);
+        overflow-y: scroll;
+        background-size: cover;
+        background-position: 100%;
+        background-repeat: no-repeat;
+    }
+    h3{
+        padding-top: 5%;
+    }
+    .crew-container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+    }
+    .crew-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 65%;
+        gap: 20px;
+        text-align: center;
+    }
+    .radios{
+        padding: 0;
+    }
+    .crew-image img{
+        width:300px;
+        height: 300px;
+    }
+}
