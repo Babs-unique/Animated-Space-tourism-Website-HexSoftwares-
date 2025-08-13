@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="destination.css">
 </head>
-<body>
+<body data-type="destination">
         <header>
         <nav>
             <div class="logo">
@@ -29,27 +29,28 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main id="destinationContainer">
         <h1><span>01</span> PICK YOUR DESTINATION</h1>
-        <div class="destination_container">
+        <div class="destination_container" >
             <div class="destination_img">
-                <img src="./starter-code/assets/destination/image-mars.png" alt="Mars" width="320" height="320">
+                <img src="./starter-code/
+assets/destination/image-mars.png" alt="Mars" width="320" height="320" id="destinationImg">
             </div>
-            <div class="destination_details">
+            <div class="destination_details" ">
                 <div class="destination_place">
-                    <div>
-                        <button>MOON</button>
-                        <button>MARS</button>
-                        <button>EUROPA</button>
-                        <button>TITAN</button>
+                    <div class="buttons">
+                        <button data-name="Moon">MOON</button>
+                        <button data-name="Mars">MARS</button>
+                        <button data-name="Europa">EUROPA</button>
+                        <button data-name="Titan">TITAN</button>
                     </div>
                 </div>
                 <div class="destination_info">
                     <div>
-                        <h2>MARS</h2>  
+                        <h2 id="name">MARS</h2>  
                     </div>
                 <div>
-                    <p>
+                    <p id="destinationText">
                         Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
                         the tallest planetary mountain in our solar system. It’s two and a half times 
                         the size of Everest!
@@ -59,15 +60,16 @@
                 <div class="destination_time">
                     <div>
                         <span class="distance">AVG. DISTANCE</span>
-                        <span class="meters">225 MIL. KM</span>
+                        <span class="meters" id="destinationDistance">225 MIL. KM</span>
                     </div>
                     <div>
                         <span class="time-spent">EST. TRAVEL TIME</span>
-                        <span class="months"> 9 MONTHS</span>
+                        <span class="months" id="destinationDuration"> 9 MONTHS</span>
                     </div>
                 </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
 
@@ -75,5 +77,6 @@
 
 
     <script src="script.js"></script>
+    <script src="destination.js"></script>
 </body>
 </html>

@@ -45,6 +45,18 @@ h2 span{
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
 }
+.text_btn button:focus{
+    background-color: white;
+    color: black;
+}
+.text_btn button:focus{
+    background-color: white;
+    color: black;
+}
+.text_btn button:active{
+    background-color: white;
+    color: black;
+}
 .text_btn{
     display: flex;
     flex-direction: column;

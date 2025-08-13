@@ -45,11 +45,19 @@ span{
     display: flex;
     gap: 15px;
 }
-.radios input{
+.radios button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: transparent;
+    transition: all 1ms ease-in;
+}
+.radios button{
     opacity: .4;
 }
-.radios input:active{
-    background-color: aqua;
+.radios button:focus{
+    background-color: rgb(255, 255, 255);
 }
 @media (min-width:320px) and (max-width:767px) {
     body{

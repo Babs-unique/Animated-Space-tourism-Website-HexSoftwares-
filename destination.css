@@ -49,8 +49,12 @@ h1 zspan{
     color: white;
     border: none;
 }
-.destination_place div button:hover{
+/* .destination_place div button:hover{
     border-bottom: 2px solid white;
+} */
+.destination_place div button:focus{
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
 }
 .destination_info{
     display: flex;

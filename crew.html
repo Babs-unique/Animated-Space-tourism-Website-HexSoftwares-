@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="crew.css">
 </head>
-<body>
+<body data-type="crew">
     <header>
         <nav>
             <div class="logo">
@@ -34,28 +34,31 @@
         <div class="crew-container">
             <div class="crew-text">
                     <div class="crew-name">
-                        <h4>FLIGHT ENGINEER</h4>
-                        <h1>ANOUSHEH ANSARI</h1>
+                        <h4 id="role">FLIGHT ENGINEER</h4>
+                        <h1 id="name">ANOUSHEH ANSARI</h1>
                     </div>
                     <div>
-                        <p>  
+                        <p id="crewInfo">  
                                 Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
                                 Ansari was the fourth self-funded space tourist, the first self-funded woman to 
                                 fly to the ISS, and the first Iranian in space. 
                         </p>
                     </div>
                     <div class="radios">
-                        <input type="radio" name="" id="">
-                        <input type="radio" name="" id="">
-                        <input type="radio" name="" id="">
-                        <input type="radio" name="" id="">
+                        <button data-name="Douglas Hurley"></button>
+                        <button data-name="Mark Shuttleworth"></button>
+                        <button data-name="Victor Glover" ></button>
+                        <button data-name="Anousheh Ansari"></button>
                     </div>
             </div>
             <div class="crew-image">
-                <img src="./starter-code/assets/crew/image-anousheh-ansari.png" alt="Crew image" height="470" width="470">
+                <img src="./starter-code/assets/crew/image-anousheh-ansari.png" alt="Crew image" height="470" width="470" id="crewImg">
             </div>
         </div>
 
     </main>
+
+    <script src="script.js"></script>
+    <script src="crew.js"></script>
 </body>
 </html>
