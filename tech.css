@@ -76,9 +76,6 @@ h2 span{
     font-size: 38px;
     font-weight: 200;
 }
-.tech_image{
-    
-}
 @media (min-width:320px) and (max-width:767px) {
     body{
         background: url(./starter-code/assets/technology/background-technology-mobile.jpg);
