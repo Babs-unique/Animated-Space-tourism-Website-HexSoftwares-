@@ -4,9 +4,51 @@ let nav = document.querySelector(".nav-links");
 //NAVBAR TOGGLE FOR MOBILE DEVICES
 burger.addEventListener("click",()=>{
     console.log("Clicked");
-    nav.classList.toggle("show-nav")
-    burger.classList.toggle("toggle")
+    const isOpen =  nav.classList.toggle("show-nav");
+    burger.classList.toggle("toggle");
+});
+//GSAP ANIMATION
+/* gsap.from(".nav-links",{
+    opacity:0,
+    duration:1,
+    y:-50,
+    x:"+=100"
+}) */
+gsap.from(".logo",{
+    opacity:0,
+    duration:1.5,
+    x:-200,
+    ease:"bounce",
+    delay: 1
 })
+gsap.from(".nav-links li",{
+    opacity:0,
+    duration:1,
+    y:-50,
+    stagger:0.6,
+    ease : "bounce"
+})
+gsap.from(".desktop-line",{
+    opacity:0,
+    duration:1,
+    x:-300,
+})
+gsap.from(".text1",{
+    opacity: 0,
+    duration :1,
+    y:-50,
+    stagger:0.5
+
+})
+
+gsap.from(".explore",{
+    opacity:0,
+    duration:1.5,
+    y:-200,
+    delay:.5,
+    ease:"bounce"
+})
+
 /* 
 
 //FETCH DATA FROM A JSON FILE

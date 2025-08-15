@@ -34,5 +34,42 @@ document.querySelectorAll(".buttons button").forEach(button=>{
         const selected = button.dataset.name;
         console.log(selected);
         destinationData(selected);
+
+        gsap.from(".text2",{
+    opacity: 0,
+    duration :1,
+    y:-50,
+    stagger:0.5
+
+})
     })
+})
+
+gsap.from("h1",{
+    opacity:0,
+    x:-200,
+    duration:1,
+    ease:"ease-in"
+
+})
+gsap.from(".destination_img img",{
+    rotate:360,
+    duration:5,
+    repeat:-1,
+    ease:"none"
+})
+gsap.from(".buttons button",{
+    opacity:0,
+    duration:1,
+    y:-50,
+    stagger:0.6,
+    ease : "bounce"
+
+})
+gsap.from(".text2",{
+    opacity: 0,
+    duration :1,
+    y:-50,
+    stagger:0.5
+
 })
